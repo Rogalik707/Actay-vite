@@ -1,0 +1,41 @@
+
+.nav {
+  margin: 50px auto 0 auto;
+  max-width: 1160px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 260px;
+    height: 80px;
+    background-color: #FAFAFA;
+    cursor: pointer;
+    text-align: center;
+    line-height: 80px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 30px;
+  }
+
+  &__item-text {
+    max-width: 223px;
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+@media screen and (max-width: 1225px) {
+  .nav {
+
+    &__list {
+    }
+  }
+
+}
+
+

@@ -1,0 +1,37 @@
+.news {
+  margin: 120px auto;
+  max-width: 1160px;
+
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    list-style-type: none;
+  }
+
+  &__button {
+    position: relative;
+    left: calc(50% - 217px / 2);
+    margin: 40px auto;
+    cursor: pointer;
+    height: 60px;
+    width: 217px;
+    border-radius: 36px/220px;
+    background: #E8C467;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.69) inset;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #5B4E2A;
+  }
+}
+
+

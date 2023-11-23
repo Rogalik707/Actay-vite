@@ -1,0 +1,123 @@
+.block-container {
+  max-width: 1160px;
+  display: flex;
+  justify-content: space-between;
+
+
+  &__text {
+    margin-top: 159px;
+  }
+
+  &__topic {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+
+  &__description {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    width: 479px;
+    color: #1C1C1C;
+  }
+
+  &__button {
+    margin-top: 40px;
+    cursor: pointer;
+    height: 60px;
+    width: 217px;
+    border-radius: 36px/220px;
+    background: #E8C467;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.69) inset;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #5B4E2A;
+  }
+
+  &__photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+  }
+
+  &__photos-upper-row {
+    margin-bottom: 40px;
+  }
+
+
+}
+
+#photo1 {
+  margin-right: 40px;
+}
+
+#photo3 {
+  margin-right: 40px;
+}
+
+.block-container-bottom {
+  position: relative;
+  max-width: 1160px;
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__arrow-left {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    transform:  translateY(-50%) translateX(-100%);
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 34px 0 #0000000A;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center;
+  }
+
+  &__arrow-right {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(100%) rotate(180deg) ;
+    right: -40px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 34px 0 #0000000A;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 1225px) {
+  .block-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &__text {
+      margin-top: 0;
+    }
+
+    &__photos {
+      margin-top: 40px;
+      width: 770px;
+      justify-content: center;
+    }
+
+
+  }
+  .block-container-bottom {
+    //flex-wrap: wrap;
+  }
+}
