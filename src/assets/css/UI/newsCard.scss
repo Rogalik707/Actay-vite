@@ -55,3 +55,33 @@
 card:last-child(after) {
   margin-right: 0;
 }
+
+@media screen and (max-width: 420px) {
+  .card {
+    max-width: 300px;
+
+    &__date {
+      margin: 20px 0 0 10px;
+    }
+
+    &__title {
+      margin: 10px 0 0 10px;
+      max-width: 280px;
+
+    }
+
+    &__photo img {
+      max-width: 300px;
+    }
+
+    &__description {
+      margin: 20px 0 0 10px;
+      max-width: 280px;
+    }
+
+    &__button {
+      width: 140px;
+      margin-left: 0;
+    }
+  }
+}

@@ -53,6 +53,8 @@ header {
   }
 
   &__navbar-list {
+    display: flex;
+
     line-height: 14px;
     font-size: 12px;
     text-align: center;

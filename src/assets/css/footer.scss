@@ -1,6 +1,6 @@
 .footer {
   margin-top: 120px;
-  height: 402px;
+  min-height: 402px;
   background-color: #D9D9D9;
   display: flex;
 
@@ -8,7 +8,6 @@
     max-width: 1160px;
     margin: 60px auto;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
   }
 
@@ -22,8 +21,7 @@
   }
 
   &__container-subtitle {
-    width: 360px;
-    height: 64px;
+    padding: 20px 26px 17px 28px;
     background-color: #3DC98E;
     text-align: center;
   }
@@ -41,7 +39,7 @@
     font-weight: 400;
     line-height: 17px;
     text-align: left;
-    width: 360px;
+    max-width: 360px;
     color: rgba(28, 28, 28, 0.3019607843);
   }
 
@@ -76,5 +74,44 @@
     text-decoration: none;
     color: #1C1C1C;
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .footer {
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__titles {
+      margin-right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__name {
+      font-size: 10vw;
+    }
+
+    &__container-subtitle {
+      width: 34vw;
+
+      padding: 10px 7px 10px 7px;
+    }
+    &__container-subtitle-text {
+      font-size: 4vw;
+
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    max-width: 600px;
+    &__container {
+      max-width: 600px;
+    }
   }
 }

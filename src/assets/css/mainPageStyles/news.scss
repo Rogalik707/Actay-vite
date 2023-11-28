@@ -34,4 +34,14 @@
   }
 }
 
+@media screen and (max-width: 1225px) {
+  .news {
+    &__list {
+      grid-template-columns: repeat(auto-fill, minmax(360px, 360px));
+      justify-content: center;
+    }
+
+  }
+}
+
 

@@ -1,0 +1,98 @@
+.block-container-improve {
+  display: flex;
+  max-width: 1160px;
+  margin: 120px auto;
+  justify-content: space-between;
+
+  &__hotel-photos {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+.improve-container {
+  &__text {
+
+  }
+  &__title {
+    max-width: 380px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+  }
+
+  &__description {
+    opacity: 0.5;
+    margin-top: 20px;
+    max-width: 479px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+
+    &-advantages {
+      margin-top: 39px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 22px;
+      text-align: left;
+
+      &-circle {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        box-shadow: 0 14px 34px 0 #00000012;
+        position: relative;
+
+      }
+      &-circle img {
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    &-advantages1 {
+      display: flex;
+      align-items: center;
+    }
+    &-advantages1 p {
+      margin-left: 18px;
+
+    }
+    &-advantages2 {
+      display: flex;
+      align-items: center;
+    }
+    &-advantages2 p {
+      margin-left: 18px;
+
+    }
+  }
+  &__cost {
+    margin-top: 80px;
+  }
+  &__cost span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #8D8D8D;
+  }
+  &__button {
+    padding: 0 37px 0 37px;
+    margin-top: 40px;
+    cursor: pointer;
+    height: 60px;
+    border-radius: 36px/220px;
+    background: #E8C467;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.69) inset;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #5B4E2A;
+  }
+}
+

@@ -10,13 +10,19 @@
 
   &__list {
     position: relative;
-    z-index: 1;
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    max-width: 1160px;
     margin: 0 auto;
-    justify-content: space-between;
+    z-index: 1;
+    max-width: 1160px;
+    overflow: hidden;
+  }
+
+  &__wrapper {
+    min-height: 100%;
+
+  }
+
+  &__block {
+    text-align: center;
   }
 
   &__arrow-left {
@@ -33,6 +39,10 @@
     background-repeat: no-repeat;
     border-radius: 50%;
     background-position: center;
+    &:after {
+      content: '';
+
+    }
   }
 
   &__arrow-right {
@@ -49,6 +59,10 @@
     background-repeat: no-repeat;
     border-radius: 50%;
     background-position: center;
+    &:after {
+      content: '';
+
+    }
   }
 
   &__button {
@@ -68,3 +82,4 @@
     color: #5B4E2A;
   }
 }
+
