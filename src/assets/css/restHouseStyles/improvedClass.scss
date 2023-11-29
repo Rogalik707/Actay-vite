@@ -96,3 +96,11 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .block-container-improve {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+

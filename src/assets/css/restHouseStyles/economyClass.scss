@@ -1,14 +1,15 @@
-.restHouse__container {
+.block-container-economy {
+  display: flex;
   max-width: 1160px;
   margin: 120px auto;
-  display: flex;
   justify-content: space-between;
-
+  flex-direction: row-reverse;
 }
 
 @media (max-width: 1200px) {
-  .restHouse__container {
-    flex-direction: column-reverse;
+  .block-container-economy {
+    flex-direction: column;
     align-items: center;
   }
+
 }
