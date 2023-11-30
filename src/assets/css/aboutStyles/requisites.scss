@@ -1,0 +1,57 @@
+.requisites {
+  max-width: 1160px;
+  margin: 0 auto 120px;
+  position: relative;
+
+  &__title {
+
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 48px;
+      text-transform: uppercase;
+
+    }
+  }
+
+  &__book{
+    position: absolute;
+    z-index: -1;
+    left: 373px;
+    top: 24px;
+  }
+
+  &__info-block{
+    margin-top: 60px;
+    width: 960px;
+    height: 702px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F9F9F9;
+    border-radius: 36px/500px;
+  }
+
+  &__column{
+    margin-top: 60px;
+    margin-left: 40px;
+    width: 400px;
+  }
+
+  &__topic{
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+
+  }
+
+  &__description{
+    margin-top: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+
+  }
+}

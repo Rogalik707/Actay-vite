@@ -41,7 +41,6 @@
 
   &__photos {
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-end;
 
   }
@@ -159,11 +158,16 @@
       align-items: center;
       max-width: 770px;
       justify-content: center;
+
+      &-upper-row {
+        margin-bottom: 10px;
+      }
     }
   }
   #photo1 {
     width: 145px;
     height: 145px;
+    margin-right: 10px;
   }
   #photo2 {
     width: 145px;
@@ -172,6 +176,8 @@
   #photo3 {
     width: 145px;
     height: 145px;
+    margin-right: 10px;
+
   }
   #photo4 {
     width: 145px;
