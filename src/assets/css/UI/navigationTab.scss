@@ -1,0 +1,21 @@
+.navigation_1 {
+  max-width: 1160px;
+  margin: 14px auto;
+  display: flex;
+  align-items: center;
+
+  & p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+
+    opacity: 0.5;
+  }
+
+  & img {
+    width: 7px;
+    height: 13px;
+    margin-left: 14px;
+  }
+}

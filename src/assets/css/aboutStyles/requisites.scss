@@ -15,16 +15,22 @@
   }
 
   &__book{
+    overflow: visible;
     position: absolute;
     z-index: -1;
     left: 373px;
     top: 24px;
+
+    & img{
+      width: 796px;
+      height: 674px;
+    }
   }
 
   &__info-block{
     margin-top: 60px;
-    width: 960px;
-    height: 702px;
+    max-width: 960px;
+    min-height: 702px;
     display: flex;
     justify-content: space-between;
     background-color: #F9F9F9;
@@ -34,7 +40,7 @@
   &__column{
     margin-top: 60px;
     margin-left: 40px;
-    width: 400px;
+    max-width: 400px;
   }
 
   &__topic{
@@ -52,6 +58,19 @@
     font-weight: 700;
     line-height: 22px;
     text-align: left;
+
+  }
+}
+
+@media (max-width: 1245px) {
+  .requisites{
+    &__info-block{
+      flex-direction: column;
+      align-content: center;
+    }
+    &__book{
+      display: none;
+    }
 
   }
 }

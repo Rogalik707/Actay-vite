@@ -52,6 +52,20 @@
     }
   }
   &__map {
+    width: 760px;
     margin-top: 40px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__map {
+      width: 360px;
+      height: 360px;
+    }
   }
 }

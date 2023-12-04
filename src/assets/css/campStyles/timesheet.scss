@@ -1,0 +1,17 @@
+.timesheet-container {
+  opacity: 1;
+}
+
+.timesheet-camp {
+  opacity: 1;
+  color: #111111;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+
+  &-season {
+    opacity: 0.5;
+    margin-top: 20px;
+  }
+}
